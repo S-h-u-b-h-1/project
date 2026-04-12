@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Manrope:wght@300;400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    color-scheme: dark;
+    --bg: #171717;
+    --bg-soft: #212223;
+    --ink: #f8f5f2;
+    --muted: #c1baac;
+    --gold: #af8855;
+    --gold-bright: #d69c4a;
+    --gold-deep: #8e6a3d;
+    --pearl: #f8f5f2;
+    --blush: #faf3f7;
+    --poudre: #f9efed;
+    --coral: #e55d42;
+    --charcoal: #212223;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-text font-sans antialiased;
+    background:
+      radial-gradient(circle at top, rgba(214, 156, 74, 0.11), transparent 28%),
+      radial-gradient(circle at bottom right, rgba(229, 93, 66, 0.08), transparent 22%),
+      linear-gradient(180deg, #191a1b 0%, #111213 100%);
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-serif font-semibold;
+  }
+
+  a {
+    @apply transition-colors duration-300;
+  }
+
+  ::selection {
+    background: rgba(175, 136, 85, 0.28);
+    color: #fff;
+  }
+}
+
+.gold-gradient {
+  background: linear-gradient(135deg, #f8f5f2 0%, #d69c4a 50%, #af8855 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.section-shell {
+  @apply mx-auto w-full max-w-7xl px-6 md:px-10 xl:px-12;
+}
+
+.luxury-panel {
+  @apply border border-white/10 backdrop-blur-sm;
+  background: linear-gradient(180deg, rgba(33, 34, 35, 0.94), rgba(24, 25, 26, 0.92));
+  box-shadow: 0 24px 80px rgba(0, 0, 0, 0.22);
+}
+
+.gold-button {
+  @apply inline-flex items-center justify-center gap-2 uppercase tracking-[0.28em] font-extrabold text-[11px] text-[#1a1000] px-7 py-3;
+  background: linear-gradient(90deg, #af8855 0%, #d69c4a 52%, #af8855 100%);
+  background-size: 200% auto;
+  box-shadow: 0 12px 28px rgba(175, 136, 85, 0.22);
+}
+
+.gold-button:hover {
+  background-position: right center;
+}
+
+.outline-button {
+  @apply inline-flex items-center justify-center gap-2 border px-7 py-3 uppercase tracking-[0.28em] font-bold text-[11px] text-pearl;
+  border-color: rgba(248, 245, 242, 0.24);
+  background: rgba(249, 239, 237, 0.04);
+}
+
+.paper-section {
+  background:
+    radial-gradient(circle at top right, rgba(214, 156, 74, 0.1), transparent 28%),
+    radial-gradient(circle at bottom left, rgba(229, 93, 66, 0.08), transparent 22%),
+    linear-gradient(180deg, #faf3f7 0%, #f8f5f2 48%, #f9efed 100%);
+}
+
+.soft-panel {
+  background: rgba(255, 255, 255, 0.5);
+  border: 1px solid rgba(33, 34, 35, 0.08);
+  box-shadow: 0 22px 50px rgba(33, 34, 35, 0.08);
+}
+
+.accent-text {
+  color: var(--gold);
+}
+
+.coral-text {
+  color: var(--coral);
+}
+
+.coral-badge {
+  background: linear-gradient(90deg, #e55d42 0%, #f29180 100%);
+  color: #fff;
+}
+
+.book-services-scroll {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(175, 136, 85, 0.7) rgba(33, 34, 35, 0.08);
+}
+
+.book-services-scroll::-webkit-scrollbar {
+  width: 10px;
+}
+
+.book-services-scroll::-webkit-scrollbar-track {
+  background: rgba(33, 34, 35, 0.08);
+  border-radius: 999px;
+}
+
+.book-services-scroll::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #af8855 0%, #d69c4a 100%);
+  border-radius: 999px;
+  border: 2px solid rgba(255, 255, 255, 0.45);
+}
+
+.book-services-scroll::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, #9f7746 0%, #c68f3f 100%);
+}
