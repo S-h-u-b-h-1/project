@@ -24,11 +24,11 @@ const Footer = () => {
         <div className="grid gap-12 lg:grid-cols-12">
           <div className="lg:col-span-5">
             <div className="mb-5 flex items-center gap-4">
-              <div className="h-16 w-16 overflow-hidden rounded-full border border-[#af8855]/30 bg-white/5">
+              <div className="h-24 w-16 overflow-hidden">
                 <img
                   src={business?.logo || maxxLogoMark}
                   alt={business?.name || 'THE MAXX SALON'}
-                  className="h-full w-full object-cover"
+                  className="h-full w-full object-contain object-left"
                 />
               </div>
               <p className="font-serif text-3xl uppercase tracking-[0.18em]">

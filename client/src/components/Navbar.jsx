@@ -57,11 +57,11 @@ const Navbar = () => {
         <div className={`rounded-[24px] border px-4 sm:px-6 lg:px-8 ${shellClass}`}>
           <div className={`flex items-center justify-between gap-4 ${isBookingPage ? 'h-14 lg:h-16' : 'h-16 lg:h-20'}`}>
             <Link to="/" className="group flex min-w-0 items-center gap-3">
-              <div className={`overflow-hidden rounded-full border border-[#af8855]/35 bg-white/5 transition-transform duration-500 group-hover:scale-105 ${isBookingPage ? 'h-10 w-10 lg:h-11 lg:w-11' : 'h-11 w-11 lg:h-12 lg:w-12'}`}>
+              <div className={`overflow-hidden transition-transform duration-500 group-hover:scale-105 ${isBookingPage ? 'h-12 w-8 lg:h-14 lg:w-10' : 'h-16 w-10 lg:h-20 lg:w-14'}`}>
                     <img
                       src={business?.logo || maxxLogoMark}
                       alt={business?.name || 'THE MAXX SALON'}
-                      className="h-full w-full object-cover"
+                      className="h-full w-full object-contain"
                     />
               </div>
               <div className="min-w-0">
