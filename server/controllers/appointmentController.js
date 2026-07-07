@@ -21,6 +21,10 @@ const createAppointment = async (req, res) => {
       timeSlot,
     } = req.body;
 
+    if (!customerName || !customerPhone) {
+      return res.status(400).json({ error: 'Customer name and phone number are required.' });
+    }
+
     const requestedIds = Array.isArray(serviceIds)
       ? serviceIds.filter(Boolean)
       : serviceId

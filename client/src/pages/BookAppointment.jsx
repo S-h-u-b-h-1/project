@@ -48,6 +48,8 @@ const BookAppointment = () => {
   const { serviceSlug } = useParams();
   const [searchParams] = useSearchParams();
 
+  const todayStr = useMemo(() => new Date().toISOString().split('T')[0], []);
+
   const [services, setServices] = useState([]);
   const [locations, setLocations] = useState([]);
   const [filter, setFilter] = useState('all');
@@ -298,10 +300,13 @@ const BookAppointment = () => {
                 />
                 <input
                   required
+                  type="tel"
+                  pattern="[0-9]{10}"
+                  title="Please enter a 10-digit mobile number"
                   name="customerPhone"
                   value={formData.customerPhone}
                   onChange={handleChange}
-                  placeholder="Mobile number"
+                  placeholder="10-digit mobile number"
                   className="w-full rounded-xl border border-black/10 bg-white px-4 py-3 text-charcoal outline-none focus:border-primary"
                 />
                 <input
@@ -331,6 +336,7 @@ const BookAppointment = () => {
                     required
                     name="date"
                     type="date"
+                    min={todayStr}
                     value={formData.date}
                     onChange={handleChange}
                     className="w-full rounded-xl border border-black/10 bg-white px-4 py-3 text-charcoal outline-none focus:border-primary"

@@ -8,11 +8,11 @@ const getServices = async (req, res) => {
     const conditions = [];
 
     if (req.query.gender) {
-      conditions.push(`(gender = $${params.length + 1} OR gender = 'Unisex')`);
+      conditions.push(`(LOWER(gender) = LOWER($${params.length + 1}) OR gender = 'Unisex')`);
       params.push(req.query.gender);
     }
     if (req.query.category) {
-      conditions.push(`category = $${params.length + 1}`);
+      conditions.push(`LOWER(category) = LOWER($${params.length + 1})`);
       params.push(req.query.category);
     }
     if (req.query.search) {
