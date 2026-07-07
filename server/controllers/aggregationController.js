@@ -8,12 +8,12 @@ const {
 
 const getHomepageData = async (req, res) => {
   try {
-    const businessRes      = await pool.query('SELECT * FROM business_info LIMIT 1');
-    const servicesRes      = await pool.query(
-      'SELECT * FROM services WHERE display_price IS NOT NULL ORDER BY popularity DESC LIMIT 3'
-    );
-    const offersRes        = await pool.query("SELECT * FROM offers WHERE valid_until >= NOW()");
-    const testimonialsRes  = await pool.query('SELECT * FROM testimonials LIMIT 5');
+    const [businessRes, servicesRes, offersRes, testimonialsRes] = await Promise.all([
+      pool.query('SELECT * FROM business_info LIMIT 1'),
+      pool.query('SELECT * FROM services WHERE display_price IS NOT NULL ORDER BY popularity DESC LIMIT 3'),
+      pool.query('SELECT * FROM offers WHERE valid_until >= NOW()'),
+      pool.query('SELECT * FROM testimonials LIMIT 5'),
+    ]);
 
     res.json({
       business: businessRes.rows[0] ? serializeBusiness(businessRes.rows[0]) : null,
