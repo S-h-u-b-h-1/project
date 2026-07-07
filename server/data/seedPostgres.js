@@ -90,7 +90,7 @@ const seedData = async () => {
     // 1. Business Info
     await pool.query(`
       INSERT INTO business_info (name, logo, phone, email, whatsapp, hours, address)
-      VALUES ('THE MAXX SALON', 'https://images.unsplash.com/photo-1560066984-138dadb4c035', '+91 7988023157', 'hello@maxxsalon.in', 'https://wa.me/917988023157', 'Mon-Sat: 10AM-9PM', 'Parsavnath City, Sector 8, Sonipat, Haryana 131001')
+      VALUES ('THE MAXX SALON', NULL, '+91 7988023157', 'hello@maxxsalon.in', 'https://wa.me/917988023157', 'Mon-Sat: 10AM-9PM', 'Parsavnath City, Sector 8, Sonipat, Haryana 131001')
     `);
 
     // 2. Locations

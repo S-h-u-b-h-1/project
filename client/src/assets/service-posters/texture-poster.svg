@@ -1,0 +1,17 @@
+<svg width="1200" height="1600" viewBox="0 0 1200 1600" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="1600" fill="#1D1B1B"/>
+  <rect width="1200" height="1600" fill="url(#bg)"/>
+  <circle cx="980" cy="256" r="244" fill="#E55D42" fill-opacity="0.16"/>
+  <path d="M286 292C430 330 540 430 612 588C688 756 696 918 646 1084" stroke="#F8F5F2" stroke-opacity="0.26" stroke-width="12" stroke-linecap="round"/>
+  <path d="M408 262C538 324 628 430 686 582C742 730 756 878 728 1030" stroke="#AF8855" stroke-opacity="0.82" stroke-width="22" stroke-linecap="round"/>
+  <path d="M548 254C634 328 694 430 730 560C762 674 764 790 744 902" stroke="#F8F5F2" stroke-opacity="0.24" stroke-width="12" stroke-linecap="round"/>
+  <text x="110" y="1250" fill="#F8F5F2" font-family="Georgia, serif" font-size="108" letter-spacing="5">TEXTURE</text>
+  <text x="116" y="1350" fill="#AF8855" font-family="Arial, sans-serif" font-size="34" font-weight="700" letter-spacing="12">SMOOTHENING AND KERATIN</text>
+  <defs>
+    <linearGradient id="bg" x1="112" y1="54" x2="1030" y2="1548" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#312522"/>
+      <stop offset="0.56" stop-color="#211E1D"/>
+      <stop offset="1" stop-color="#141414"/>
+    </linearGradient>
+  </defs>
+</svg>

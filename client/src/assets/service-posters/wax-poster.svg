@@ -1,0 +1,18 @@
+<svg width="1200" height="1600" viewBox="0 0 1200 1600" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="1600" fill="#F3E8DE"/>
+  <rect width="1200" height="1600" fill="url(#bg)"/>
+  <circle cx="302" cy="1230" r="246" fill="#E55D42" fill-opacity="0.12"/>
+  <path d="M368 350C478 270 634 244 770 286C862 314 934 372 986 456" stroke="#212223" stroke-opacity="0.16" stroke-width="6" stroke-linecap="round"/>
+  <rect x="398" y="492" width="406" height="250" rx="52" fill="#FFF9F5" fill-opacity="0.64" stroke="#AF8855" stroke-opacity="0.45"/>
+  <path d="M462 570C520 534 588 516 664 516C740 516 806 534 864 570" stroke="#AF8855" stroke-width="8" stroke-linecap="round"/>
+  <path d="M462 640C528 684 596 706 664 706C732 706 800 684 866 640" stroke="#212223" stroke-opacity="0.2" stroke-width="6" stroke-linecap="round"/>
+  <text x="118" y="1240" fill="#212223" font-family="Georgia, serif" font-size="112" letter-spacing="5">WAX</text>
+  <text x="124" y="1342" fill="#AF8855" font-family="Arial, sans-serif" font-size="34" font-weight="700" letter-spacing="12">FACE AND BODY CARE</text>
+  <defs>
+    <linearGradient id="bg" x1="88" y1="70" x2="1022" y2="1518" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FBF1EA"/>
+      <stop offset="0.6" stop-color="#F4E8DE"/>
+      <stop offset="1" stop-color="#E9DACE"/>
+    </linearGradient>
+  </defs>
+</svg>

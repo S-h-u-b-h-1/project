@@ -1,0 +1,17 @@
+<svg width="1200" height="1600" viewBox="0 0 1200 1600" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="1600" fill="#201E1E"/>
+  <rect width="1200" height="1600" fill="url(#bg)"/>
+  <circle cx="960" cy="302" r="258" fill="#D69C4A" fill-opacity="0.28"/>
+  <path d="M308 326C442 250 616 260 730 350C828 428 888 542 900 668C910 782 878 888 796 968C712 1048 610 1092 494 1084C412 1078 344 1048 284 994" stroke="#F8F5F2" stroke-opacity="0.35" stroke-width="20" stroke-linecap="round"/>
+  <path d="M362 378C452 318 580 324 662 390C736 450 782 540 788 642" stroke="#AF8855" stroke-width="10" stroke-linecap="round"/>
+  <path d="M420 1062C504 1132 610 1168 736 1168" stroke="#F8F5F2" stroke-opacity="0.24" stroke-width="4" stroke-linecap="round"/>
+  <text x="110" y="1250" fill="#F8F5F2" font-family="Georgia, serif" font-size="120" letter-spacing="5">CUT</text>
+  <text x="114" y="1354" fill="#AF8855" font-family="Arial, sans-serif" font-size="36" font-weight="700" letter-spacing="12">TRIM AND STYLE</text>
+  <defs>
+    <linearGradient id="bg" x1="150" y1="0" x2="1014" y2="1600" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#2A2624"/>
+      <stop offset="0.54" stop-color="#1E1E1E"/>
+      <stop offset="1" stop-color="#151515"/>
+    </linearGradient>
+  </defs>
+</svg>

@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { MessageCircle, MapPin, Phone, Mail } from 'lucide-react';
 import { getBusinessInfo, getLocations } from '../services/api';
 
-const maxxLogoMark = '/assets/service-posters/1.png';
+import maxxLogoMark from '../assets/maxx-logo-mark.svg';
 
 const Footer = () => {
   const [business, setBusiness] = useState(null);

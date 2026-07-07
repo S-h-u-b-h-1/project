@@ -1,0 +1,18 @@
+<svg width="1200" height="1600" viewBox="0 0 1200 1600" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="1600" fill="#201F20"/>
+  <rect width="1200" height="1600" fill="url(#bg)"/>
+  <circle cx="930" cy="274" r="246" fill="#AF8855" fill-opacity="0.18"/>
+  <path d="M388 370C458 320 546 294 652 294C758 294 846 320 916 370" stroke="#F8F5F2" stroke-opacity="0.22" stroke-width="8" stroke-linecap="round"/>
+  <path d="M486 474C542 430 598 410 654 410C710 410 766 430 822 474" stroke="#D69C4A" stroke-opacity="0.78" stroke-width="14" stroke-linecap="round"/>
+  <path d="M416 622C496 556 576 524 654 524C732 524 812 556 892 622" stroke="#F8F5F2" stroke-opacity="0.24" stroke-width="10" stroke-linecap="round"/>
+  <path d="M354 776C454 696 554 654 654 654C754 654 854 696 954 776" stroke="#E55D42" stroke-opacity="0.46" stroke-width="12" stroke-linecap="round"/>
+  <text x="112" y="1244" fill="#F8F5F2" font-family="Georgia, serif" font-size="112" letter-spacing="5">BODY</text>
+  <text x="116" y="1342" fill="#AF8855" font-family="Arial, sans-serif" font-size="34" font-weight="700" letter-spacing="12">POLISH AND SPA TIME</text>
+  <defs>
+    <linearGradient id="bg" x1="98" y1="36" x2="1050" y2="1528" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#2F2B2B"/>
+      <stop offset="0.58" stop-color="#211F20"/>
+      <stop offset="1" stop-color="#141415"/>
+    </linearGradient>
+  </defs>
+</svg>

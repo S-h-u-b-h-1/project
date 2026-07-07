@@ -1,0 +1,19 @@
+<svg width="1200" height="1600" viewBox="0 0 1200 1600" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="1600" fill="#241F1B"/>
+  <rect width="1200" height="1600" fill="url(#bg)"/>
+  <circle cx="238" cy="292" r="228" fill="#E55D42" fill-opacity="0.22"/>
+  <circle cx="916" cy="1234" r="250" fill="#AF8855" fill-opacity="0.2"/>
+  <path d="M290 408C404 274 566 214 740 246C840 264 928 314 1002 396" stroke="#F8F5F2" stroke-opacity="0.26" stroke-width="18" stroke-linecap="round"/>
+  <path d="M260 584C420 414 640 376 852 476" stroke="#D69C4A" stroke-opacity="0.65" stroke-width="16" stroke-linecap="round"/>
+  <path d="M230 762C432 562 694 536 934 674" stroke="#E55D42" stroke-opacity="0.5" stroke-width="14" stroke-linecap="round"/>
+  <path d="M220 948C450 758 708 760 970 920" stroke="#F8F5F2" stroke-opacity="0.22" stroke-width="10" stroke-linecap="round"/>
+  <text x="106" y="1252" fill="#F8F5F2" font-family="Georgia, serif" font-size="112" letter-spacing="5">COLOUR</text>
+  <text x="112" y="1354" fill="#AF8855" font-family="Arial, sans-serif" font-size="34" font-weight="700" letter-spacing="12">GLOBAL AND HIGHLIGHTS</text>
+  <defs>
+    <linearGradient id="bg" x1="120" y1="24" x2="1052" y2="1506" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#34261F"/>
+      <stop offset="0.56" stop-color="#241E1A"/>
+      <stop offset="1" stop-color="#191817"/>
+    </linearGradient>
+  </defs>
+</svg>

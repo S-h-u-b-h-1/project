@@ -1,0 +1,20 @@
+<svg width="1200" height="1600" viewBox="0 0 1200 1600" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="1600" fill="#F1E7DE"/>
+  <rect width="1200" height="1600" fill="url(#bg)"/>
+  <circle cx="930" cy="286" r="258" fill="#AF8855" fill-opacity="0.18"/>
+  <circle cx="260" cy="1234" r="240" fill="#E55D42" fill-opacity="0.12"/>
+  <path d="M372 426C438 334 538 282 654 282C770 282 870 334 936 426" stroke="#212223" stroke-opacity="0.25" stroke-width="10" stroke-linecap="round"/>
+  <path d="M420 520C480 468 558 440 654 440C750 440 830 468 888 520" stroke="#212223" stroke-opacity="0.18" stroke-width="6" stroke-linecap="round"/>
+  <path d="M486 720C540 754 596 772 654 772C712 772 768 754 822 720" stroke="#AF8855" stroke-width="10" stroke-linecap="round"/>
+  <path d="M430 608C448 596 470 590 496 590C522 590 544 596 562 608" stroke="#212223" stroke-opacity="0.3" stroke-width="5" stroke-linecap="round"/>
+  <path d="M746 608C764 596 786 590 812 590C838 590 860 596 878 608" stroke="#212223" stroke-opacity="0.3" stroke-width="5" stroke-linecap="round"/>
+  <text x="112" y="1240" fill="#212223" font-family="Georgia, serif" font-size="112" letter-spacing="5">FACIAL</text>
+  <text x="118" y="1342" fill="#AF8855" font-family="Arial, sans-serif" font-size="34" font-weight="700" letter-spacing="12">GLOW AND SKIN PREP</text>
+  <defs>
+    <linearGradient id="bg" x1="94" y1="66" x2="1080" y2="1546" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F9F1EA"/>
+      <stop offset="0.56" stop-color="#F3E8DE"/>
+      <stop offset="1" stop-color="#EADDCF"/>
+    </linearGradient>
+  </defs>
+</svg>

@@ -1,0 +1,17 @@
+<svg width="1200" height="1600" viewBox="0 0 1200 1600" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="1600" fill="#1C1D1E"/>
+  <rect width="1200" height="1600" fill="url(#bg)"/>
+  <circle cx="934" cy="264" r="238" fill="#AF8855" fill-opacity="0.2"/>
+  <path d="M318 454C402 362 518 316 654 316C790 316 906 362 990 454" stroke="#F8F5F2" stroke-opacity="0.22" stroke-width="8" stroke-linecap="round"/>
+  <path d="M466 556C520 522 582 506 654 506C726 506 788 522 842 556" stroke="#AF8855" stroke-opacity="0.88" stroke-width="16" stroke-linecap="round"/>
+  <path d="M406 672C478 742 560 778 654 778C748 778 830 742 902 672" stroke="#F8F5F2" stroke-opacity="0.26" stroke-width="10" stroke-linecap="round"/>
+  <text x="106" y="1244" fill="#F8F5F2" font-family="Georgia, serif" font-size="100" letter-spacing="5">GROOM</text>
+  <text x="114" y="1342" fill="#AF8855" font-family="Arial, sans-serif" font-size="34" font-weight="700" letter-spacing="12">MEN AND BEARD DETAIL</text>
+  <defs>
+    <linearGradient id="bg" x1="112" y1="34" x2="1044" y2="1530" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#2A2C2E"/>
+      <stop offset="0.58" stop-color="#1D1F21"/>
+      <stop offset="1" stop-color="#111315"/>
+    </linearGradient>
+  </defs>
+</svg>

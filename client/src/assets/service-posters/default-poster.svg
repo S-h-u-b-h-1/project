@@ -1,0 +1,17 @@
+<svg width="1200" height="1600" viewBox="0 0 1200 1600" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="1600" fill="#212223"/>
+  <rect width="1200" height="1600" fill="url(#bg)"/>
+  <circle cx="932" cy="286" r="276" fill="#AF8855" fill-opacity="0.22"/>
+  <circle cx="226" cy="1318" r="318" fill="#E55D42" fill-opacity="0.16"/>
+  <path d="M140 1080C310 920 496 860 708 892C867 916 980 1003 1050 1154" stroke="#F8F5F2" stroke-opacity="0.28" stroke-width="2"/>
+  <path d="M214 1152C406 1021 592 980 788 1026" stroke="#F8F5F2" stroke-opacity="0.18" stroke-width="2"/>
+  <text x="120" y="1240" fill="#F8F5F2" font-family="Georgia, serif" font-size="118" letter-spacing="6">SALON</text>
+  <text x="126" y="1340" fill="#AF8855" font-family="Arial, sans-serif" font-size="34" font-weight="700" letter-spacing="12">SIGNATURE SERVICE</text>
+  <defs>
+    <linearGradient id="bg" x1="82" y1="74" x2="1044" y2="1518" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#2B2C2D"/>
+      <stop offset="0.58" stop-color="#1B1C1D"/>
+      <stop offset="1" stop-color="#111213"/>
+    </linearGradient>
+  </defs>
+</svg>

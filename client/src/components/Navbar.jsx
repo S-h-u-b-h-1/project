@@ -4,7 +4,7 @@ import { Menu, X } from 'lucide-react';
 import { AnimatePresence, motion } from 'framer-motion';
 import { getBusinessInfo } from '../services/api';
 
-const maxxLogoMark = '/assets/service-posters/1.png';
+import maxxLogoMark from '../assets/maxx-logo-mark.svg';
 
 const navLinks = [
   { name: 'Home', path: '/' },
@@ -39,14 +39,14 @@ const Navbar = () => {
       : location.pathname === path || location.pathname.startsWith(`${path}/`);
 
   const shellClass = scrolled
-    ? 'border-white/10 bg-[rgba(17,18,19,0.94)] shadow-[0_22px_55px_rgba(0,0,0,0.28)]'
-    : 'border-white/12 bg-[rgba(21,22,23,0.88)] shadow-[0_22px_55px_rgba(0,0,0,0.22)]';
+    ? 'border-white/10 bg-[rgba(17,18,19,0.85)] shadow-[0_22px_55px_rgba(0,0,0,0.28)] backdrop-blur-md'
+    : 'border-white/12 bg-[rgba(21,22,23,0.75)] shadow-[0_22px_55px_rgba(0,0,0,0.22)] backdrop-blur-md';
 
   const brandTextClass = 'text-[#f8f5f2]';
   const navShellClass = 'border-white/10 bg-black/10';
-  const inactiveNavClass = 'text-white/74 hover:bg-white/6 hover:text-white';
+  const inactiveNavClass = 'text-white/74 hover:bg-[#af8855]/10 hover:text-white transition-all duration-300';
   const mobileButtonClass = 'border-white/10 bg-white/5 text-white';
-  const mobilePanelClass = 'border-white/10 bg-[rgba(18,19,20,0.96)] shadow-[0_24px_70px_rgba(0,0,0,0.32)]';
+  const mobilePanelClass = 'border-white/10 bg-[rgba(18,19,20,0.96)] shadow-[0_24px_70px_rgba(0,0,0,0.32)] backdrop-blur-xl';
   const mobileTextClass = 'text-[#f8f5f2]';
   const mobileActiveClass = 'bg-[linear-gradient(90deg,rgba(175,136,85,0.22),rgba(214,156,74,0.16))] text-[#f8f5f2]';
   const mobileInactiveClass = 'text-[#f8f5f2] hover:bg-white/5';
@@ -54,10 +54,10 @@ const Navbar = () => {
   return (
     <nav className={`fixed left-0 right-0 top-0 z-50 transition-all duration-500 ${scrolled || isBookingPage ? 'py-3' : 'py-5'}`}>
       <div className="section-shell">
-        <div className={`rounded-[24px] border px-4 sm:px-6 lg:px-8 ${shellClass} ${isBookingPage ? 'backdrop-blur-xl' : ''}`}>
+        <div className={`rounded-[24px] border px-4 sm:px-6 lg:px-8 ${shellClass}`}>
           <div className={`flex items-center justify-between gap-4 ${isBookingPage ? 'h-14 lg:h-16' : 'h-16 lg:h-20'}`}>
-            <Link to="/" className="flex min-w-0 items-center gap-3">
-              <div className={`overflow-hidden rounded-full border border-[#af8855]/35 bg-white/5 ${isBookingPage ? 'h-10 w-10 lg:h-11 lg:w-11' : 'h-11 w-11 lg:h-12 lg:w-12'}`}>
+            <Link to="/" className="group flex min-w-0 items-center gap-3">
+              <div className={`overflow-hidden rounded-full border border-[#af8855]/35 bg-white/5 transition-transform duration-500 group-hover:scale-105 ${isBookingPage ? 'h-10 w-10 lg:h-11 lg:w-11' : 'h-11 w-11 lg:h-12 lg:w-12'}`}>
                     <img
                       src={business?.logo || maxxLogoMark}
                       alt={business?.name || 'THE MAXX SALON'}
@@ -65,7 +65,7 @@ const Navbar = () => {
                     />
               </div>
               <div className="min-w-0">
-                <p className={`truncate font-serif uppercase tracking-[0.16em] ${brandTextClass} ${isBookingPage ? 'text-base lg:text-lg' : 'text-lg lg:text-xl'}`}>
+                <p className={`truncate font-serif uppercase tracking-[0.16em] ${brandTextClass} transition-colors duration-300 group-hover:text-[#af8855] ${isBookingPage ? 'text-base lg:text-lg' : 'text-lg lg:text-xl'}`}>
                   {business?.name || 'THE MAXX SALON'}
                 </p>
                 {isBookingPage && (

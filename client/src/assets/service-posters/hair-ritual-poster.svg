@@ -1,0 +1,17 @@
+<svg width="1200" height="1600" viewBox="0 0 1200 1600" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="1600" fill="#1F2120"/>
+  <rect width="1200" height="1600" fill="url(#bg)"/>
+  <circle cx="936" cy="320" r="260" fill="#AF8855" fill-opacity="0.16"/>
+  <path d="M330 322C526 356 674 478 760 682C834 858 818 1032 720 1192" stroke="#F8F5F2" stroke-opacity="0.22" stroke-width="8" stroke-linecap="round"/>
+  <path d="M400 352C542 420 642 528 706 676C770 826 770 966 710 1100" stroke="#D69C4A" stroke-opacity="0.66" stroke-width="18" stroke-linecap="round"/>
+  <path d="M478 382C594 450 672 550 716 694C754 818 748 916 700 1004" stroke="#F8F5F2" stroke-opacity="0.32" stroke-width="10" stroke-linecap="round"/>
+  <text x="112" y="1252" fill="#F8F5F2" font-family="Georgia, serif" font-size="112" letter-spacing="6">RITUAL</text>
+  <text x="116" y="1350" fill="#AF8855" font-family="Arial, sans-serif" font-size="34" font-weight="700" letter-spacing="12">SPA AND NOURISHMENT</text>
+  <defs>
+    <linearGradient id="bg" x1="118" y1="108" x2="1004" y2="1518" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#2D3030"/>
+      <stop offset="0.6" stop-color="#1E2020"/>
+      <stop offset="1" stop-color="#111314"/>
+    </linearGradient>
+  </defs>
+</svg>
