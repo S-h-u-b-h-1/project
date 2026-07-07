@@ -4,7 +4,7 @@ import { Menu, X } from 'lucide-react';
 import { AnimatePresence, motion } from 'framer-motion';
 import { getBusinessInfo } from '../services/api';
 
-import maxxLogoMark from '../assets/maxx-logo-mark.svg';
+import maxxLogoMark from '../assets/maxx-logo-mark.png';
 
 const navLinks = [
   { name: 'Home', path: '/' },
