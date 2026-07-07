@@ -66,6 +66,7 @@ const BookAppointment = () => {
   });
 
   useEffect(() => {
+    document.title = 'Book a Signature Experience | THE MAXX SALON';
     Promise.all([getServices({ sort: 'price_asc' }), getLocations()]).then(([serviceRes, locationRes]) => {
       setServices(serviceRes.data);
       setLocations(locationRes.data);

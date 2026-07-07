@@ -1,3 +1,5 @@
+import { useEffect } from 'react';
+
 const stats = [
   { value: '500+', label: 'Happy Clients' },
   { value: '10+', label: 'Team Members' },
@@ -40,6 +42,9 @@ const sectionEyebrowClass =
   'text-[11px] font-extrabold uppercase tracking-[0.42em] text-[#af8855]';
 
 const About = () => {
+  useEffect(() => {
+    document.title = 'About Our Team & Stylists | THE MAXX SALON';
+  }, []);
   return (
     <div className="bg-background text-[#f8f5f2]">
       <section className="relative overflow-hidden pt-32 pb-24">

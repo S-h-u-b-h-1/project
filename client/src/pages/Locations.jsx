@@ -10,6 +10,7 @@ const Locations = () => {
   const [locations, setLocations] = useState([]);
 
   useEffect(() => {
+    document.title = 'Our Premium Salon Outlets | THE MAXX SALON';
     getLocations().then((res) => setLocations(res.data)).catch(() => {});
   }, []);
 

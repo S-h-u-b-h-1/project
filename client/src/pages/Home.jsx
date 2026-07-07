@@ -41,6 +41,7 @@ const Home = () => {
   const reviewSectionRef = useRef(null);
 
   useEffect(() => {
+    document.title = 'THE MAXX SALON | Luxury Hair, Skin & Bridal Experiences';
     if (hasFetched.current) return;
     hasFetched.current = true;
 
@@ -137,7 +138,13 @@ const Home = () => {
                 index === activeSlide ? 'opacity-100' : 'opacity-0'
               }`}
             >
-              <img src={slide.image} alt={slide.title} className="h-full w-full object-cover" />
+              <img 
+                src={slide.image} 
+                alt={slide.title} 
+                fetchPriority={index === 0 ? 'high' : 'low'}
+                loading={index === 0 ? 'eager' : 'lazy'}
+                className="h-full w-full object-cover" 
+              />
             </div>
           ))}
           <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(23,23,23,0.54),rgba(23,23,23,0.84))]" />
@@ -216,6 +223,7 @@ const Home = () => {
                 <img
                   src={card.image}
                   alt={card.title}
+                  loading="lazy"
                   className="absolute inset-0 h-full w-full object-cover opacity-70 transition-transform duration-[1800ms] group-hover:scale-110"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#212223] via-[#212223]/25 to-transparent" />
@@ -257,6 +265,7 @@ const Home = () => {
                 <img
                   src={category.image}
                   alt={category.title}
+                  loading="lazy"
                   className="absolute inset-0 h-full w-full object-cover transition-transform duration-[1600ms] group-hover:scale-110"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#212223] via-[#212223]/20 to-transparent" />
@@ -295,6 +304,7 @@ const Home = () => {
                   <img
                     src={offer.bannerUrl || curatedCategories[index % curatedCategories.length].image}
                     alt={offer.title}
+                    loading="lazy"
                     className="h-full w-full object-cover"
                   />
                   <div className="absolute left-0 top-0 bg-[#212223] px-5 py-2 text-[10px] font-bold uppercase tracking-[0.22em] text-[#f8f5f2]">

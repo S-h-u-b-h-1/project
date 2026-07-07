@@ -1,14 +1,15 @@
-import { useEffect } from 'react';
+import { useEffect, lazy, Suspense } from 'react';
 import { Routes, Route, Navigate, useLocation } from 'react-router-dom';
 import { Analytics } from '@vercel/analytics/react';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
-import Home from './pages/Home';
-import Services from './pages/Services';
-import BookAppointment from './pages/BookAppointment';
-import BookingConfirmation from './pages/BookingConfirmation';
-import Locations from './pages/Locations';
-import About from './pages/About';
+
+const Home = lazy(() => import('./pages/Home'));
+const Services = lazy(() => import('./pages/Services'));
+const BookAppointment = lazy(() => import('./pages/BookAppointment'));
+const BookingConfirmation = lazy(() => import('./pages/BookingConfirmation'));
+const Locations = lazy(() => import('./pages/Locations'));
+const About = lazy(() => import('./pages/About'));
 
 function ScrollToTop() {
   const location = useLocation();
@@ -26,18 +27,24 @@ function App() {
       <ScrollToTop />
       <Navbar />
       <main className="flex-grow">
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/services" element={<Services />} />
-          <Route path="/services/:genderSlug" element={<Services />} />
-          <Route path="/services/:genderSlug/:categorySlug" element={<Services />} />
-          <Route path="/book" element={<BookAppointment />} />
-          <Route path="/book/:serviceSlug" element={<BookAppointment />} />
-          <Route path="/booking-confirmation" element={<BookingConfirmation />} />
-          <Route path="/locations" element={<Locations />} />
-          <Route path="/about" element={<About />} />
-          <Route path="*" element={<Navigate to="/" replace />} />
-        </Routes>
+        <Suspense fallback={
+          <div className="flex min-h-[60vh] items-center justify-center bg-background">
+            <div className="h-10 w-10 animate-spin rounded-full border-t-2 border-[#af8855]"></div>
+          </div>
+        }>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/services" element={<Services />} />
+            <Route path="/services/:genderSlug" element={<Services />} />
+            <Route path="/services/:genderSlug/:categorySlug" element={<Services />} />
+            <Route path="/book" element={<BookAppointment />} />
+            <Route path="/book/:serviceSlug" element={<BookAppointment />} />
+            <Route path="/booking-confirmation" element={<BookingConfirmation />} />
+            <Route path="/locations" element={<Locations />} />
+            <Route path="/about" element={<About />} />
+            <Route path="*" element={<Navigate to="/" replace />} />
+          </Routes>
+        </Suspense>
       </main>
       <Footer />
       <Analytics />

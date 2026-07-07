@@ -26,6 +26,7 @@ const Services = () => {
   const [activeCategory, setActiveCategory] = useState('All');
 
   useEffect(() => {
+    document.title = 'Premium Hair, Skin & Bridal Services | THE MAXX SALON';
     setLoading(true);
     getServices({
       gender: activeGender,

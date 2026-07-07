@@ -16,6 +16,7 @@ const ServiceCard = ({ service }) => {
         <img
           src={image}
           alt={service.name}
+          loading="lazy"
           className="h-full w-full object-cover transition-transform duration-[1800ms] group-hover:scale-110"
         />
         <div className="absolute right-4 top-4 z-20 border border-[#af8855]/30 bg-[#f8f5f2] px-3 py-1 text-xs font-bold text-[#212223]">

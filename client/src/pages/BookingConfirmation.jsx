@@ -7,6 +7,10 @@ const BookingConfirmation = () => {
   const hasOpenedWhatsApp = useRef(false);
 
   useEffect(() => {
+    document.title = 'Appointment Confirmed | THE MAXX SALON';
+  }, []);
+
+  useEffect(() => {
     if (!state?.whatsAppUrl || hasOpenedWhatsApp.current) {
       return;
     }
